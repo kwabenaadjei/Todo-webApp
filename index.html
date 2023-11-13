@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Todo.css">
+    <title>Todo</title>
+</head>
+<body>
+    <div class="container">
+        <!-- header -->
+        <header class="text-center text-light my-4">
+            <h1 class="mb-4">Todo List</h1>
+            <form action="" class="search">
+                <input type="text" class="form-control m-auto" name="search" placeholder="Search Todos">
+            </form>
+        </header>
+
+        <!-- list of todos -->
+        <ul class="list-group todos mx-auto text-light">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>Play FIFA 23</span>
+                <i class="far fa-trash-alt delete"></i>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>Fanfool boys</span>
+                <i class="far fa-trash-alt delete"></i>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>Netflix and chill</span>
+                <i class="far fa-trash-alt delete"></i>
+            </li>
+        </ul>
+
+        <!-- add anew todo -->
+        <form action="" class="add text-center my-4">
+            <label for="" class="text-light">Add a new todo...</label>
+            <input type="text" name="add" class="form-control m-auto">
+        </form>
+
+    </div>
+    <script src="Todo.js"></script>
+</body>
+</html>
