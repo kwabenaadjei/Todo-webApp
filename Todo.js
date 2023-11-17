@@ -13,8 +13,10 @@ const generateTemplate = (todo) =>{
 }
 
 
+
 addForm.addEventListener('submit' , e =>{
     e.preventDefault();
+    
     const todo = addForm.add.value.trim();
 
     if(todo.length){
@@ -22,7 +24,11 @@ addForm.addEventListener('submit' , e =>{
         addForm.reset();
     }
     
-});
+    localStorage.setItem('todo' , todo);
+}
+);
+
+
 
 //Deleting todos
 list.addEventListener('click' , e =>{
@@ -48,3 +54,11 @@ search.addEventListener('keyup' , () =>{
     const term = search.value.trim().toLowerCase();
     filterTodos(term);
 });
+
+
+if(localStorage.getItem('todo')){
+    
+    generateTemplate(localStorage.getItem('todo'));
+    addForm.reset();
+    
+}
